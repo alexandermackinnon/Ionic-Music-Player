@@ -1,9 +1,5 @@
 // IMPORTING REACT
-<<<<<<< HEAD
 import React, { useState, useRef } from "react";
-=======
-import React from "react";
->>>>>>> 18382129c7d5a0123fa20450b0d2dd3feb0e726c
 
 // IMPORTING FONTAWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +9,6 @@ import {
   faForward,
 } from "@fortawesome/free-solid-svg-icons";
 
-<<<<<<< HEAD
 const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   // Ref
   const audioRef = useRef();
@@ -75,21 +70,6 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
         ref={audioRef}
         src={currentSong.audio}
       ></audio>
-=======
-const Player = () => {
-  return (
-    <div className="player">
-      <div className="time-control">
-        <p>Start Time</p>
-        <input type="range" />
-        <p>End Time</p>
-      </div>
-      <div className="play-control">
-        <FontAwesomeIcon className="previous" size="2x" icon={faBackward} />
-        <FontAwesomeIcon className="play" size="2x" icon={faPlay} />
-        <FontAwesomeIcon className="next" size="2x" icon={faForward} />
-      </div>
->>>>>>> 18382129c7d5a0123fa20450b0d2dd3feb0e726c
     </div>
   );
 };
