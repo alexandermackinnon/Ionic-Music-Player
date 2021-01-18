@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // IMPORT REACT
 import React, { useState } from "react";
 // IMPORT STYLES
@@ -21,6 +22,20 @@ function App() {
         setIsPlaying={setIsPlaying}
         currentSong={currentSong}
       />
+=======
+// IMPORTING REACT
+import React from "react";
+
+// IMPORTING COMPONENTS
+import Player from "./components/Player.js";
+import Song from "./components/Song.js";
+
+function App() {
+  return (
+    <div className="App">
+      <Song />
+      <Player />
+>>>>>>> 18382129c7d5a0123fa20450b0d2dd3feb0e726c
     </div>
   );
 }
