@@ -9,11 +9,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
-<<<<<<< HEAD
     "node-sass": "^4.14.1",
-=======
-    "node-sass": "^5.0.0",
->>>>>>> 18382129c7d5a0123fa20450b0d2dd3feb0e726c
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",

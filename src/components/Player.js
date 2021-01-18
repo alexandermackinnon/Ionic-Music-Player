@@ -4,6 +4,7 @@ import React, { useState, useRef } from "react";
 // IMPORTING FONTAWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faPause,
   faPlay,
   faBackward,
   faForward,
@@ -11,7 +12,7 @@ import {
 
 const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   // Ref
-  const audioRef = useRef();
+  const audioRef = useRef(null);
   // Event Handlers
   const playSongHandler = () => {
     if (isPlaying) {
@@ -38,8 +39,8 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   };
   // State
   const [songInfo, setSongInfo] = useState({
-    currentTime: null,
-    duration: null,
+    currentTime: 0,
+    duration: 0,
   });
   return (
     <div className="player">
@@ -59,7 +60,7 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
         <FontAwesomeIcon
           className="play"
           size="2x"
-          icon={faPlay}
+          icon={isPlaying ? faPause : faPlay}
           onClick={playSongHandler}
         />
         <FontAwesomeIcon className="next" size="2x" icon={faForward} />
