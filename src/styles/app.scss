@@ -11,5 +11,21 @@ h3 {
   color: #414141;
 }
 
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h3,
+h5 {
+  color: rgb(150, 150, 150);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
 @import "./song";
 @import "./player";
+@import "./library";
