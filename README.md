@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# The Rotation Music App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## About the project
+
+The Rotation Music App is a simple music player containing a library of the songs my ears have been enjoying. It is heavily inspired by DevEd's [Creative React and Redux Course](https://developedbyed.com/).
 
 ## Available Scripts
 
