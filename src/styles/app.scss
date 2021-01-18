@@ -1,0 +1,15 @@
+// GENERAL PARAMETER
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #414141;
+}
+
+@import "./song";
+@import "./player";
