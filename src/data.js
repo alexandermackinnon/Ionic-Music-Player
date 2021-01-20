@@ -56,12 +56,12 @@ function data() {
       active: false,
     },
     {
-      name: "Lost in Yesterday",
+      name: "Is It True",
       cover:
         "https://media.pitchfork.com/photos/5e41992daf0b890008c98164/1:1/w_600/The%20Slow%20Rush_Tame%20Impala.jpg",
       artist: "Tame Impala",
       audio:
-        "http://www1.24naijamuzic.com/wp-content/uploads/2020/01/Tame_Impala_-_Lost_In_Yesterday.mp3",
+        "https://24naijamusicfiles.com/wp-content/uploads/2020/02/Tame_Impala_-_Is_It_True.mp3",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: false,
@@ -114,7 +114,7 @@ function data() {
       name: "WELFARE",
       cover:
         "https://i1.wp.com/www2.24naijamuzic.com/wp-content/uploads/2020/06/RMR-Drug-Dealing-Is-A-Lost-Art-EP.png?w=960&ssl=1",
-      artist: "RMR feat. Westside Gunn",
+      artist: "RMR (feat. Westside Gunn)",
       audio:
         "https://24naijamusicfiles.com/wp-content/uploads/2020/06/RMR_Ft_Westside_Gunn_-_Welfare.mp3",
       color: ["#205950", "#2ab3bf"],
