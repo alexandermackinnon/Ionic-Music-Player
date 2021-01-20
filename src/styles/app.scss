@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+// IMPORT COMPONENTS
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";
+
 h1,
 h2,
 h3 {
-  color: #414141;
+  color: rgb(75, 75, 75);
 }
 
 h3,
@@ -19,13 +25,9 @@ h5 {
 
 h3,
 h5 {
-  color: rgb(150, 150, 150);
+  color: rgb(100, 100, 100);
 }
 
 body {
   font-family: "Rubik", sans-serif;
 }
-
-@import "./song";
-@import "./player";
-@import "./library";

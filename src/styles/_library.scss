@@ -7,6 +7,9 @@
   background-color: white;
   box-shadow: 2px 2px 50px rgb(206, 206, 206);
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
   h2 {
     padding: 2rem;
   }
@@ -20,9 +23,10 @@
   cursor: pointer;
   img {
     width: 30%;
+    border-radius: 50%;
   }
   &:hover {
-    background: rgb(245, 245, 245);
+    background: rgb(230, 230, 230);
   }
 }
 
@@ -53,4 +57,21 @@
   background: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
   border: transparent;
+}
+
+.selected {
+  background: rgb(50, 50, 50);
+  color: white;
+  h3,
+  h5 {
+    color: rgb(200, 200, 200);
+  }
+  &:hover {
+    background: rgb(75, 75, 75);
+  }
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
 }

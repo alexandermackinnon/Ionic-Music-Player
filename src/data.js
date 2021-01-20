@@ -21,7 +21,7 @@ function data() {
         "https://24naijamusicfiles.com/wp-content/uploads/2020/06/Anderson_Paak_-_Lockdown.mp3",
       color: ["#F75460", "#5546D8"],
       id: uuidv4(),
-      active: true,
+      active: false,
     },
     {
       name: "Dead Man Walking",
