@@ -1,5 +1,6 @@
 // IMPORTING REACT
 import React, { useEffect } from "react";
+import { playAudio } from "../util";
 
 // IMPORTING FONTAWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -71,10 +72,14 @@ const Player = ({
     if (direction === "skip-back") {
       if ((currentIndex - 1) % songs.length === -1) {
         setCurrentSong(songs[songs.length - 1]);
+        // Check if the song is playing
+        playAudio(audioRef, isPlaying);
         return;
       }
       setCurrentSong(songs[(currentIndex - 1) % songs.length]);
     }
+    // Check if the song is playing: adding this line of code twice since the 'return' may ignore it here
+    playAudio(audioRef, isPlaying);
   };
 
   return (
@@ -88,7 +93,8 @@ const Player = ({
           onChange={dragHandler}
           type="range"
         />
-        <p>{getTime(songInfo.duration)}</p>
+        <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
+        {/* Fixes NaN timestamp glitch */}
       </div>
       <div className="play-control">
         <FontAwesomeIcon
