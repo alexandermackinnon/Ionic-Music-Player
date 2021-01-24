@@ -31,7 +31,18 @@
   padding: 1rem;
   svg {
     color: rgb(75, 75, 75);
+    font-size: 4rem;
     cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 1rem;
+    border-radius: 50%;
+    &:hover {
+      background: rgb(230, 230, 230);
+    }
+    &:active {
+      background: rgb(205, 205, 205);
+      transform: scale(0.75);
+    }
   }
 }
 
@@ -44,6 +55,12 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 16px;
   width: 16px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
 }
 
 .track {
@@ -65,4 +82,14 @@ input[type="range"]::-webkit-slider-thumb {
   transform: translateX(0%);
   transition: all 0.25s ease;
   pointer-events: none;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 80%;
+  }
+  .play-control {
+    width: 60%;
+  }
 }

@@ -75,3 +75,10 @@
   transform: translateX(0%);
   opacity: 1;
 }
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}

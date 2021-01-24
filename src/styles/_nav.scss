@@ -7,12 +7,25 @@ nav {
     background: transparent;
     border: 2px solid rgb(75, 75, 75);
     cursor: pointer;
-    padding: 0.75rem;
+    padding: 1rem;
     border-radius: 1000px;
-    transition: all 0.5s ease;
+    transition: all 0.25s ease;
     font-weight: 600;
     &:hover {
       background: rgb(230, 230, 230);
+    }
+    &:active {
+      background: rgb(205, 205, 205);
+      transform: scale(0.75);
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10; // Puts the library button on top of the menu when opened on mobile
     }
   }
 }

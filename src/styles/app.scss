@@ -31,3 +31,11 @@ h5 {
 body {
   font-family: "Rubik", sans-serif;
 }
+
+.App {
+  transition: all 0.5s ease;
+}
+
+.library-active {
+  margin-left: 15rem;
+}
